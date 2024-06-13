@@ -31,7 +31,7 @@
         padding: 1em;
       }
 
-      a:link,
+      /* a:link, */
       a:visited {
         /* color: #fb6542; */
         text-decoration: #fb6542;
