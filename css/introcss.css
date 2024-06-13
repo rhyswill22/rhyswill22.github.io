@@ -31,9 +31,8 @@
         padding: 1em;
       }
 
-      a:link,
       a:hover {
-        text-decoration: green;
+        color: green;
       }
   
       a:link,
