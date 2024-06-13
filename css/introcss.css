@@ -31,7 +31,8 @@
         padding: 1em;
       }
 
-      a:link,
+      a:link{  color: #fb6542}
+
       a:hover {
         color: green;
       }
