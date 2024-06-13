@@ -30,12 +30,6 @@
         border: 5px purple;
         padding: 1em;
       }
-
-      a:link{  color: #fb6542}
-
-      a:hover {
-        color: green;
-      }
   
       a:link,
       a:visited {
@@ -43,4 +37,7 @@
 
       }
 
+      a:hover {
+        color: green;
+      }
   
