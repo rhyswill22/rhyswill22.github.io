@@ -40,6 +40,15 @@ h1 {
 
 /* Your CSS below here */
 
-background{
-  background-position: top;
+article
+{
+  padding: 20mm;
+  box-shadow: 0 0 10mm rgba(0, 0, 0, 0.5);
+  border-top: 1mm solid #666;
+  border-bottom: 1mm solid #666;
+  background: 
+    url('top-image.png') no-repeat top,
+    url('bottom-image.png') no-repeat bottom,
+    linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,0.2));
+  background-size: cover, cover, cover;
 }
