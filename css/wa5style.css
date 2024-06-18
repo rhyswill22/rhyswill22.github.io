@@ -24,7 +24,9 @@ body{
     left: 5%;
     /* width: 85%; */
     /* height: 20%; */
-    padding: 2.2%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    
     border-style: solid;
     border-color: red;
     filter: drop-shadow(20px 20px 4px rgba(0,0,0,0.5));
