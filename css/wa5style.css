@@ -1,34 +1,34 @@
 body{
     background-color: white;
-    background:
-    url('/img/jackHughes.jpg') no-repeat center;
 
 }
 
 
 .container{
     position: absolute;
-    width: 55%
+    /* left:0%; */
+    /* width: 40% */
+    /* fit-content; */
 }
 
 
 .image{
     width: 100%;
-    height: auto;
+    height: 100%;
 
 }
 
 .overlayScore{
     position: absolute;
     top: 3%;
-    left: 10%;
-    width: 85%;
-    height: 20%;
-    padding: 5%;
+    left: 5%;
+    /* width: 85%; */
+    /* height: 20%; */
+    /* padding: 5%; */
     filter: drop-shadow(20px 20px 4px rgba(0,0,0,0.5));
     background-color: black;
     color: white;
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-family: Verdana, sans-serif;
     
 }
