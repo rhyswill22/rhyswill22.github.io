@@ -5,26 +5,37 @@ body{
 
 #flex-parent{
     background-color: orangered;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 #flex-parent p{
     padding:5vw;
+    order: 0;
 }
 
 #flex-child1{
+    order: 2;
      
 }
 #flex-child2{
+    order: 3;
  
 }
 #flex-child3{
- 
+    order: 1;
 }
 #flex-child4{
+    order: 0;
  
 }
 
 
 #grid-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
 
 }
 
@@ -32,9 +43,14 @@ body{
     background-color: grey;
     padding:3vw 5vh;
     margin:5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 #no0{
+    grid-column: 2;
     
 }
 #no1{
