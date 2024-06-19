@@ -10,7 +10,7 @@ body{
     justify-content: space-around;
     
 }
-#flex-parent p{
+flex-parent p{
     padding:5vw;
     order: 0;
 }
