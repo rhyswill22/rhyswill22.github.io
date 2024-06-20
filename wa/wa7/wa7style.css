@@ -66,3 +66,13 @@ body {
       float: left;
 
   }
+
+  article{
+    flex: 1;
+    min-width: 300px;
+  }
+
+  aside{
+    flex: 1;
+    min_width: 300px;
+  }
