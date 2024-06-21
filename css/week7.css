@@ -2,8 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2e63ff;
-    color: #ecf0ea;
+    background-color: #606060;
+    color: #c9c9c9;
 }
 nav{
     height: 50vh;
@@ -11,13 +11,13 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     height:20px;
-    background-color: #30ff36;
+    background-color: #bfa75d;
 }
 nav a{
     width:10vw;
     text-align: center;
     text-decoration: none;
-    color:#6b2020;
+    color:#222222;
 }
 
 
@@ -29,7 +29,7 @@ img{
 }
 
 #red-ball{
-    background-color: hotpink;
+    background-color: #bfa75d;
     width: 20px;
     height:20px;
     border-radius: 50%;
