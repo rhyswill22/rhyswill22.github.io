@@ -14,12 +14,29 @@ nav{
     height:20px;
     background-color: #bfa75d;
 }
+
+
+
+
+
 nav a{
     width:10vw;
     text-align: center;
     text-decoration: none;
     color:#222222;
+ 
 }
+    
+/*start of animation  */
+
+
+/* end of animation  */
+
+
+
+
+
+
 
 
 img{
@@ -37,4 +54,66 @@ img{
     position: absolute;
     left:5vw;
     top:0;
+    animation-name: bouncingBall;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
+
+/*start of animation  */
+@keyframes bouncingBall{
+    from{
+        margin:0;
+    }
+
+10%{
+
+    margin-left: 0%;
+    margin-top: 100%;
+}
+20%{
+    margin-left: 25%;
+    margin-top: 75%;
+    
+}
+
+30%{
+    margin-left: 50%;
+    margin-top: 100%;
+}
+
+40%{
+    margin-left: 75%;
+    margin-top: 80%;
+}
+
+50%{
+    margin-left: 80%;
+    margin-top: 100%;
+}
+60%{
+    margin-left: 90%;
+    margin-top: 90%;
+    
+}
+
+70%{
+    margin-left: 91%;
+    margin-top: 100%;
+}
+
+80%{
+    margin-left: 94%;
+    margin-top: 95%;
+}
+
+90%{
+    margin-left: 94%;
+    margin-top: 100%;
+}
+
+to{
+margin: 0;
+}
+    
+}
+/* end of animation  */
