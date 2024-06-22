@@ -26,7 +26,10 @@ nav a{
     color:#222222;
  
 }
-    
+
+a:hover{
+    background-color:#c9c9c9;
+}
 /*start of animation  */
 
 
@@ -42,8 +45,10 @@ nav a{
 img{
     width:30vw;
     height: 30vh;
-   
-    
+    margin-top: 1%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #bfa75d;
 }
 
 #red-ball{
