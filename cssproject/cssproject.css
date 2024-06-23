@@ -2,18 +2,23 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #449079;
+    background-color: #73757d;
     color: #c9c9c9;
-    font-family: Impact, sans-serif
+    font-family: Georgia, serif
 }
 
 nav{
-height: 50vh;
+/* height:50vh; */
+margin-right: 200px;
+margin-left: 200px;
 display:flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 height:20px;
-background-color: #bfa75d;
+background-color: #2d66f2;
+border-style: solid;
+border-color:#f1b82e
+    
 }
 
 
@@ -21,7 +26,7 @@ nav a{
 width:10vw;
 text-align: center;
 text-decoration: none;
-color:#222222;
+color:#000000;
 
 }
 
