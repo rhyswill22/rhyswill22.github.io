@@ -22,6 +22,7 @@ h2 {
     padding: 1em;
     text-align: center;
     font-size: 1.5em;
+    font-weight: normal;
 }
 
 nav {
@@ -87,6 +88,7 @@ schedule {
     width: 100%;
     padding: 15px;
     border-bottom: solid;
+    border-color: #f1b82e;
     background-color: #000000;
     font-size: 2em;
     margin-top: 0%;
