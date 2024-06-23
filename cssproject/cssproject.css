@@ -33,13 +33,15 @@ nav {
     height: 20px;
     background-color: #2d66f2;
     border: solid #f1b82e;
+    align-items: center;
 }
 
 nav a {
-    width: 15vw;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
+    
 }
 
 nav a:hover {
