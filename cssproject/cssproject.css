@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #73757d;
-    color: #c9c9c9;
+    color: #ffffff;
     font-family: Georgia, serif
 }
 
@@ -26,7 +26,7 @@ nav a{
 width:15vw;
 text-align: center;
 text-decoration: none;
-color:#000000;
+color:#ffffff;
 
 }
 
