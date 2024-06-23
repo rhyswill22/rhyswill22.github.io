@@ -7,6 +7,22 @@ body{
     font-family: Georgia, serif
 }
 
+h1{
+padding: 0.4em;
+text-align: center;
+font-size: 3em;
+    
+    
+}
+
+h2{
+padding: 1em;
+text-align: center;
+font-size: 1.5em;
+    
+    
+}
+
 nav{
 /* height:50vh; */
 margin-right: 200px;
