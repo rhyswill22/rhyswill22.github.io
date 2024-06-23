@@ -31,24 +31,27 @@ h2 {
     background-size: cover;
     border-top: solid;
     border-bottom: solid;
+    border-color: #f1b82e;
     /* box-shadow: inset 0 0 0 2000px black; */
 
     
 }
 
 scheduleHeader{
-    padding: 3em;
+    padding: 0.5em;
     text-align: center;
     font-size: 1.5em;
     font-weight: normal;
-    /* background: linear-gradient(0deg, rgb(0 0 0), rgb(241 184 46 / 35%)), url("ColoradoSymphony.jpg"); */
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    border-top: solid;
-    border-bottom: solid;
-    /* box-shadow: inset 0 0 0 2000px black; */
-
+    /* margin-left: 25%; */
+    margin-left: 20%;
+    margin-right: 20%;
+    display: block;
+    background-color: black;
+    border: solid;
+    border-color:#f1b82e
+    
+    /* background: linear-gradient(0deg, rgb(0 0 0), rgb(241 184 46 / 35%)); */
+     /* width: 50%; */
 }
 
 nav {
@@ -57,7 +60,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     height: 20px;
-    background-color: #2d66f2;
+    background-color: #012d7f;
     border: solid #f1b82e;
     align-items: center;
 }
@@ -149,5 +152,12 @@ schedule {
         width:100px;
         height: 100px;
         margin-bottom: -4%
+    }
+
+    scheduleHeader{
+        margin: 0;
+        margin-top: 5%;
+        border-right-style: none;
+        border-left-style: none;
     }
 }
