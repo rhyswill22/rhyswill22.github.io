@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #449079;
+    color: #c9c9c9;
+    font-family: Impact, sans-serif
+}
+
+nav{
+height: 50vh;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+height:20px;
+background-color: #bfa75d;
+}
+
+
+nav a{
+width:10vw;
+text-align: center;
+text-decoration: none;
+color:#222222;
+
+}
+
+a:hover{
+background-color:#c9c9c9;
+}
