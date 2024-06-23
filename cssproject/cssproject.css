@@ -1,55 +1,91 @@
-body{
+
+
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #73757d;
     color: #ffffff;
-    font-family: Georgia, serif
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-padding: 0.4em;
-text-align: center;
-font-size: 3em;
+h1 {
+    font-family: Snell Roundhand, cursive;
+
+    text-align: center;
+    font-size: 6em;
+}
+
+h2 {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav {
+    margin: 0 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20px;
+    background-color: #2d66f2;
+    border: solid #f1b82e;
+}
+
+nav a {
+    width: 15vw;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    background-color: #c9c9c9;
+    color: #000000;
+}
+
+schedule {
+    width: 85%;
+}
+
+.concert {
+    background-color: #012d7f;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.concert h3 {
+    margin-bottom: 0.5em;
+    color: #f1b82e;
     
-    
 }
 
-h2{
-padding: 1em;
-text-align: center;
-font-size: 1.5em;
-    
-    
+.concert p, .concert ul {
+    margin-bottom: 0.5em;
 }
 
-nav{
-/* height:50vh; */
-margin-right: 200px;
-margin-left: 200px;
-display:flex;
-flex-direction: row;
-justify-content: space-around;
-height:20px;
-background-color: #2d66f2;
-border-style: solid;
-border-color:#f1b82e
-    
+.concert ul {
+    padding-left: 1em;
 }
 
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+    }
 
-nav a{
-width:15vw;
-text-align: center;
-text-decoration: none;
-color:#ffffff;
+    nav a {
+        width: 100%;
+        padding: 0.5em 0;
+    }
 
-}
-
-a:hover{
-background-color:#c9c9c9;
-}
-
-.concert{
-    margin-bottom: 2em;
+    schedule {
+        width: 100%;
+        padding: 1em;
+    }
 }
