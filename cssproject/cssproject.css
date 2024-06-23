@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #73757d;
+    background-color: #464749;
     color: #ffffff;
     font-family: Georgia, serif;
     margin: 0;
@@ -83,6 +83,9 @@ img{
     width:200px;
     height: 200px;
     margin-bottom: 4%;
+    filter: brightness(100);
+    /* background-color: #464749; */
+    
 }
 
 schedule {
