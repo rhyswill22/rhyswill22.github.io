@@ -150,13 +150,53 @@ schedule {
     to{
         margin-left: 400px;
         margin-top: 35px
- 
 }
     
 }
 /*  end of animation   */
 
 
+#musicNote{
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 530px;
+    filter: brightness(0%);
+    transform: scale(20%);
+    animation-name: musicPlaying;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes musicPlaying{
+    from{
+        margin-top: -85px;
+    margin-left: 500px;
+    }
+
+    25%{
+    margin-top: -100px;
+    margin-left: 520px;
+    }
+
+    50%{
+    margin-top: -90px;
+    margin-left: 550px;
+    }
+
+    75%{
+    margin-top: -100px;
+    margin-left: 590px;
+    opacity: 30%;
+    }
+    
+    to{
+        margin-top: -110px;
+        margin-left: 600px;
+        opacity: 0%;
+    }
+    
+    
+}
 
 
 @media (max-width: 750px) {
