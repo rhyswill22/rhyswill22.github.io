@@ -48,13 +48,15 @@ scheduleHeader{
     display: block;
     background-color: black;
     border: solid;
-    border-color:#f1b82e
+    border-color:#f1b82e;
     
-    /* background: linear-gradient(0deg, rgb(0 0 0), rgb(241 184 46 / 35%)); */
-     /* width: 50%; */
+
+   
 }
 
 nav {
+    position: sticky;
+    top: 0;
     margin: 0 200px;
     display: flex;
     flex-direction: row;
@@ -63,9 +65,12 @@ nav {
     background-color: #012d7f;
     border: solid #f1b82e;
     align-items: center;
+
+    
 }
 
 nav a {
+    
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -123,13 +128,7 @@ schedule {
 }
 
 #bow{
-    /* background-color: #35ff01;
-    width: 20px;
-    height:20px;
-    border-radius: 50%;
-    position: absolute;
-    left:5vw;
-    top:0; */
+
     position: absolute;
     margin-top: 10%;
     /* margin-right: 0; */
@@ -220,7 +219,8 @@ schedule {
     }
     
     nav {
-        /* position: sticky; */
+        position: sticky;
+        top: 8.2%;
         flex-direction: column;
         height: auto;
         margin: 10%;
