@@ -57,8 +57,8 @@ scheduleHeader{
 }
 
 nav {
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
     margin: 0 200px;
     
     display: flex;
@@ -223,8 +223,8 @@ schedule {
     }
     
     nav {
-        position: sticky;
-        top: 8.2%;
+        /* position: sticky; */
+        /* top: 8.2%; */
         flex-direction: column;
         height: auto;
         margin: 10%;
@@ -241,6 +241,11 @@ schedule {
     text-align: center;
     font-size: 1em;
     }
+
+    scheduleHeader{
+        position: revert;
+    }
+    
     schedule {
         width: 100%;
         padding: 1em;
