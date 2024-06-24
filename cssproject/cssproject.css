@@ -91,7 +91,7 @@ img{
     width:200px;
     height: 200px;
     margin-bottom: 4%;
-    filter: brightness(100);
+    /* filter: brightness(100); */
     padding: 1em;
     /* background-color: #464749; */
     
