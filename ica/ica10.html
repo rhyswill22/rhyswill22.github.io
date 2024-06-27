@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name = "viewport" content = "width=device-width">
-<link rel ="stylesheet" href="/css/ica10.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 10: Interactive Elements</title>
+    <link rel="stylesheet" href="/css/ica10.css">
 </head>
 
 <body>
-<header> ICA 10: Interactive Elements</header>
-<p>This is my ICA 10 page that has two interactive elements!</p>
+    <header>ICA 10: Interactive Elements</header>
+    <p>This is my ICA 10 page that has two interactive elements!</p>
 
+    <button id="changeFont">Change Font!</button>
+    <p id="text">By clicking this button, I will change font!</p>
 
-<button id="changeFont">Change Font!</button>
-<p id="text">By clicking this button, I will change font!</p>
+    <button id="changeBackgroundColor">Change Background Color!</button>
 
-<button id="changeBackgroundColor">Change Background Color!</button>
+    <script>
+        document.getElementById('changeFont').addEventListener('click', function() {
+            var text = document.getElementById('text');
+            text.classList.toggle('fontChange');
+        });
 
-
-<script>
-    document.getElementById('changeFont').addEventListener('click', function() {
-        var text = document.getElementById('text');
-        text.classList.toggle('fontChange');
-    });
-
-    document.getElementById('changeBackgroundColor').addEventListener('click', function() {
-
-        background.classList.toggle('backgroundColorChange');
-    });
-</script>
+        document.getElementById('changeBackgroundColor').addEventListener('click', function() {
+            document.body.classList.toggle('backgroundColorChange');
+        });
+    </script>
 </body>
-</html>
 
+</html>
