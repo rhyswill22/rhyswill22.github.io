@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width=device-width">
+</head>
+</html>
+
+<header> ICA 10: Interactive Elements</header>
+
+<body>
+
+This is my ICA 10 page that has two interactive elements!
+
+
+
+</body>
+
+<button id="changeFont">Change Font!</button>
+<p id="text">By clicking this button, I will change font!</p>
+
+<button id="changeBackgroundColor">Change Background Color!</button>
+<p id = "background"></p>
+
+<script>
+    document.getElementById('changeFont').addEventListener('click', function() {
+        var text = document.getElementById('text');
+        text.classList.toggle('fontChange');
+    });
+
+    document.getElementById('changeBackgroundColor').addEventListener('click', function() {
+        var background = document.getElementById('background');
+        box.classList.toggle('backgroundColorChange');
+    });
+</script>
+</body>
+</html>
