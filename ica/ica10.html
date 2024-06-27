@@ -9,7 +9,9 @@
 </head>
 
 <body>
+
     <header>ICA 10: Interactive Elements</header>
+
     <p>This is my ICA 10 page that has two interactive elements!</p>
 
     <button id="changeFont">Change Font!</button>
@@ -18,6 +20,8 @@
     <button id="changeBackgroundColor">Change Background Color!</button>
 
     <script>
+
+
         document.getElementById('changeFont').addEventListener('click', function() {
             var text = document.getElementById('text');
             text.classList.toggle('fontChange');
@@ -26,7 +30,9 @@
         document.getElementById('changeBackgroundColor').addEventListener('click', function() {
             document.body.classList.toggle('backgroundColorChange');
         });
+        
     </script>
+
 </body>
 
 </html>
