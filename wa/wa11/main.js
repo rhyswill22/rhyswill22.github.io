@@ -10,11 +10,17 @@ const imageFileNames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jp
 /* Declaring the alternative text for each image file */
 
 const imageAltText = {
-    'pic1.jpg': 'Closeup of a blue human eye',
-    'pic2.jpg': 'Rock',
-    'pic3.jpg': 'Purple flowers',
-    'pic4.jpg': 'Closeup of a blue human eye',
-    'pic5.jpg': 'Closeup of a blue human eye'
+    // 'pic1.jpg': 'Closeup of a blue human eye',
+    // 'pic2.jpg': 'Rock',
+    // 'pic3.jpg': 'Purple flowers',
+    // 'pic4.jpg': '',
+    // 'pic5.jpg': ''
+
+    'Mav.jpeg': 'My dog Maverick',
+    'Mav2.jpeg': 'My dog Maverick',
+    'MeAndBro.jpeg': 'Me and my roommate in Flagstaff',
+    'Skiing.jpeg': 'Me skiing',
+    'SnoopOnAStoop.jpeg': 'Snoop on a Stoop'
 
 }
 
