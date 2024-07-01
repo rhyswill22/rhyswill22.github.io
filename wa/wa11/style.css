@@ -37,7 +37,8 @@ button {
 
 .thumb-bar img {
   display: block;
-  width: 10%;
+  width: 100px;
+  height: auto;
   float: left;
   cursor: pointer;
 }
