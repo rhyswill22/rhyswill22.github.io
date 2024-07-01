@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.displayed-img {  width: 100%; 
+  height: 80%;
+}
+
 .full-img {
   position: relative;
   display: block;
