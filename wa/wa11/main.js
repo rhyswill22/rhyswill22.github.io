@@ -26,7 +26,7 @@ const imageAltText = {
 }
 
 /* Looping through images */
-for (const filename of imageFilenames) {
+for (const filename of imageFileNames) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', `images/${filename}`);
     newImage.setAttribute('alt', imageAltText[filename]);
