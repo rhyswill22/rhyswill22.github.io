@@ -5,7 +5,8 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const imageFileNames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+// const imageFileNames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const imageFileNames = ['Mav.jpeg', 'Mav2.jpeg', 'MeAndBro.jpeg', 'Skiing.jpeg', 'SnoopOnAStoop.jpeg'];
 
 /* Declaring the alternative text for each image file */
 
@@ -27,8 +28,8 @@ const imageAltText = {
 /* Looping through images */
 
 const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
+newImage.setAttribute('src', '`images/${filename}');
+newImage.setAttribute('alt', imageFileName['/images']);
 thumbBar.appendChild(newImage);
 newImage.addEventListener('click', (e) => {
     displayedImage.src = e.target.src;
