@@ -5,12 +5,14 @@ const newQuote = document.querySelector('#js-new-quote');
 
 newQuote.addEventListener('click', getQuote);
 
-let answerTxt = document.querySelector('#js-answer-text')
-let answer = '';
+
 // Add a new variable that holds the API endpoint: 
 
 const apiEndpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
+
+let answerTxt = document.querySelector('#js-answer-text')
+let answer = '';
 // Change the getQuote function to use the fetch method to get a random quote from that endpoint.
 
 async function getQuote()
@@ -61,6 +63,7 @@ const answerBtn = document.querySelector('#js-tweet').addEventListener('click', 
 // Write the function declaration, and check the button click works by returning a message in the console everytime the button is clicked.
 function displayAnswer(){
     console.log('Display answer was clicked');
+    answerTxt.textcContent = answer;
 }
 
 getQuote();
