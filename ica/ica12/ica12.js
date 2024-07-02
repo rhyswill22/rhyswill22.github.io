@@ -63,7 +63,7 @@ const answerBtn = document.querySelector('#js-tweet').addEventListener('click', 
 // Write the function declaration, and check the button click works by returning a message in the console everytime the button is clicked.
 function displayAnswer(){
     console.log('Display answer was clicked');
-    answerTxt.textcContent = answer;
+    answerTxt.textContent = answer;
 }
 
 getQuote();
