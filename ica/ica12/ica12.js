@@ -5,11 +5,8 @@ const newQuote = document.querySelector('#js-new-quote');
 
 newQuote.addEventListener('click', getQuote);
 
-// Write the function declaration, and check the button click works by returning a message in the console everytime the button is clicked.
-function displayAnswer(){
-    console.log('Display answer was clicked');
-}
-
+let answerTxt = document.querySelector('#js-answer-text')
+let answer = '';
 // Add a new variable that holds the API endpoint: 
 
 const apiEndpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
@@ -29,6 +26,8 @@ const response = await fetch(apiEndpoint);
     const json = await response.json();
     // If successful, output the quote to the console
     displayQuote(json.question);
+    answer = json["answer"];
+    answerTxt.textContent = '';
     }
 
     catch(error){
@@ -58,5 +57,10 @@ function displayQuote(quote)
 const answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
 
 // Notice when you refresh that a quote isn't displayed. Fix that.
+
+// Write the function declaration, and check the button click works by returning a message in the console everytime the button is clicked.
+function displayAnswer(){
+    console.log('Display answer was clicked');
+}
 
 getQuote();
