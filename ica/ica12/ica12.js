@@ -1,8 +1,11 @@
 // Select the new quote button using a querySelector. Assign it to a new variable.
-
+const newQuote = document.querySelector('#js-new-quote');
 
 // Write an event listener to check if the button is clicked. When the button is clicked, run a function called "getQuote".
 
+newQuote.addEventListener('click', getTrivia);
+
+const getAnswerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer)
 
 // Write the function declaration, and check the button click works by returning a message in the console everytime the button is clicked.
 
