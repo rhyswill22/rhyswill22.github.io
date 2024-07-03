@@ -27,8 +27,8 @@ const response = await fetch(apiEndpoint);
 
     const json = await response.json();
     // If successful, output the quote to the console
-    displayQuote(json.question);
-    answer = json["answer"];
+    displayQuote(json["body"]);
+    answer = json["author"];
     answerTxt.textContent = '';
     }
 
