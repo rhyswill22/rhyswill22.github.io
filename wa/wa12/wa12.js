@@ -8,8 +8,9 @@ newQuote.addEventListener('click', getQuote);
 
 // Add a new variable that holds the API endpoint: 
 
-const apiEndpoint = 'https://favqs.com/api/qotd';
+const apiEndpoint = "https://api.api-ninjas.com/v1/quotes?category=failure";
 
+apiKey = "SDCfrWxWtfFwZWNtdSpj7g==NwEOFuDcw0CsJ9zh"
 
 let answerTxt = document.querySelector('#js-answer-text')
 let answer = '';
@@ -18,16 +19,21 @@ let answer = '';
 async function getQuote()
 {
 try{
-const response = await fetch(apiEndpoint);
+const response = await fetch(apiEndpoint,
+    {
+        headers:{
+
+        
+        'X-Api-Key': apiKey
+        }
+    });
     if(!response.ok){
         throw Error(response.statusText)
-
     }
-
 
     const json = await response.json();
     // If successful, output the quote to the console
-    displayQuote(json["body"]);
+    displayQuote(json["quote"]);
     answer = json["author"];
     answerTxt.textContent = '';
     }
