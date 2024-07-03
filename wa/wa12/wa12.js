@@ -57,7 +57,7 @@ const answerBtn = document.querySelector('#js-tweet').addEventListener('click', 
 
 // Notice when you refresh that a quote isn't displayed. Fix that.
 // Fetch a quote when the page loads
-getQuote();
+// getQuote();
 
 // Write the function declaration, and check the button click works by returning a message in the console every time the button is clicked.
 function displayAnswer() {

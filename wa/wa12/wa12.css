@@ -68,6 +68,7 @@ header {
 .twitter {
   background-color: #f1b82e;
   text-decoration: none;
+  margin-bottom: 15px;
 }
 
 .twitter:hover {
@@ -87,6 +88,15 @@ header {
   background-color: #cccccc;
   color: #7e7e7e;
   cursor: not-allowed;
+}
+
+.hint {
+  background-color: #2dc000;
+  margin-bottom: 15px;
+}
+
+.hint:hover {
+  background-color: #157f01;
 }
 
 @media screen and (max-width: 600px) {
