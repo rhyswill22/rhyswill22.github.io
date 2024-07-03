@@ -10,6 +10,7 @@ const apiKey = "SDCfrWxWtfFwZWNtdSpj7g==NwEOFuDcw0CsJ9zh";
 
 let answerTxt = document.querySelector('#js-answer-text');
 let answer = '';
+let author = '';
 
 // Change the getQuote function to use the fetch method to get a random quote from that endpoint.
 async function getQuote() {
@@ -28,11 +29,12 @@ async function getQuote() {
 
         // If successful, output the quote to the console
     
-        // if (json.length > 0) {
+
             displayQuote(json[0].quote);
-            answer = json[0].author;
+            author = json[0].author;
+            answer = author;
             answerTxt.textContent = '';
-        // }
+   
     } catch (error) {
 
         // If it fails, output an error message to the console AND via alert
@@ -68,7 +70,7 @@ function displayAnswer() {
 
 function displayHint() {
     const hintText = document.querySelector('#js-hint-text');
-    const initials = author.split(' ').map(name => name[0]).join('');
+    const initials = author.split(' ').map(author => author[0]).join('');
     hintText.textContent = initials;
 }
 
