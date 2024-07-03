@@ -25,26 +25,34 @@ async function getQuote() {
         }
 
         const json = await response.json();
+
         // If successful, output the quote to the console
+    
         if (json.length > 0) {
             displayQuote(json[0].quote);
             answer = json[0].author;
             answerTxt.textContent = '';
         }
     } catch (error) {
+
         // If it fails, output an error message to the console AND via alert
+
         console.log(error);
         alert('Error. Could not fetch quote');
+
     }
 }
 
 // Write a second function called "displayQuote" that will display the text of a fetched quote in the HTML element with an id of js-quote-text.
 function displayQuote(quote) {
+
     const quoteText = document.querySelector('#js-quote-text');
+
     quoteText.textContent = quote;
+
 }
 
-// Adjust getQuote to run displayQuote at the proper place in the code.
+
 const answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
 
 // Notice when you refresh that a quote isn't displayed. Fix that.
