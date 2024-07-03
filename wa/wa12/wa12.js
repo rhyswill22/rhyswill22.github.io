@@ -28,11 +28,11 @@ async function getQuote() {
 
         // If successful, output the quote to the console
     
-        if (json.length > 0) {
+        // if (json.length > 0) {
             displayQuote(json[0].quote);
             answer = json[0].author;
             answerTxt.textContent = '';
-        }
+        // }
     } catch (error) {
 
         // If it fails, output an error message to the console AND via alert
