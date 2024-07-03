@@ -64,3 +64,15 @@ function displayAnswer() {
     console.log('Display answer was clicked');
     answerTxt.textContent = answer;
 }
+
+
+function displayHint() {
+    const hintText = document.querySelector('#js-hint-text');
+    const initials = author.split(' ').map(name => name[0]).join('');
+    hintText.textContent = initials;
+}
+
+
+const hintBtn = document.querySelector('#js-hint').addEventListener('click', displayHint);
+
+getQuote();
