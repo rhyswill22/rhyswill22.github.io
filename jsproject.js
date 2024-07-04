@@ -20,18 +20,18 @@
 
     // }};
 
-    document.getElementById('rotateButton').addEventListener('click', function() {
-        const board = document.getElementById('board');
-        const angle = Math.floor(Math.random() * 360);
-        board.style.transform = `rotate(${angle}deg)`;
-    });
+    // document.getElementById('rotateButton').addEventListener('click', function() {
+    //     const board = document.getElementById('board');
+    //     const angle = Math.floor(Math.random() * 360);
+    //     board.style.transform = `rotate(${angle}deg)`;
+    // });
     
-    document.querySelectorAll('.board-number').forEach(function(numberElement) {
-        numberElement.addEventListener('click', function() {
-            const selectedNumber = numberElement.getAttribute('data-number');
-            document.getElementById('phoneBar').value = selectedNumber;
-        });
-    });
+    // document.querySelectorAll('.board-number').forEach(function(numberElement) {
+    //     numberElement.addEventListener('click', function() {
+    //         const selectedNumber = numberElement.getAttribute('data-number');
+    //         document.getElementById('phoneBar').value = selectedNumber;
+    //     });
+    // });
 
 
     // const questions = [
@@ -77,3 +77,17 @@
     //     answer: "No Exit"}
 
   // end of document
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const numbers = document.querySelectorAll('.number');
+    const phoneNumberInput = document.getElementById('phoneNumber');
+  
+    numbers.forEach(number => {
+      number.addEventListener('click', () => {
+        const selectedNumber = number.getAttribute('data-number');
+        phoneNumberInput.value += selectedNumber;
+      });
+    });
+  });
+  

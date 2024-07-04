@@ -1,51 +1,39 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-<meta charset = "UTF-8">
-<meta name ="viewport" content = "width=device-width, initial-scale=1.0">
-<title> Enter your phone number (Quick and Easy!!!) </title>
-<link rel="stylesheet" href="jsproject.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Project</title>
+  <link rel="stylesheet" href="jsproject.css">
 </head>
 <body>
-<header>
-Enter your phone number:
+  <div class="dartboard-container">
+    <div class="dartboard">
+      <div class="number" data-number="0">0</div>
+      <div class="number" data-number="1">1</div>
+      <div class="number" data-number="2">2</div>
+      <div class="number" data-number="3">3</div>
+      <div class="number" data-number="4">4</div>
+      <div class="number" data-number="5">5</div>
+      <div class="number" data-number="6">6</div>
+      <div class="number" data-number="7">7</div>
+      <div class="number" data-number="8">8</div>
+      <div class="number" data-number="9">9</div>
+    </div>
+  </div>
+  <input type="text" id="phoneNumber" placeholder="Enter phone number here" readonly>
+  <script src="jsproject.js"></script>
+</body>
+</html>
 
-</header>
-
-<!-- My plan: User hits a button that rolls a dice between 0-9.
+<!-- My plan: User hits a button that rolls a dice between 0-9. 
 Depending on what number they land on, that is how many many advertisement blocks will appear on their screen.
 Additionally, they will have to answer an American literature trivia question.
 If the user answers the question incorrectly through the entire process of entering the phone number, it will reset the process of entering the phone number.
-The user will not be allowed to reset their answer if they hit the wrong phone number, they will have to refresh the page.-->
+The user will not be allowed to reset their answer if they hit the wrong phone number, they will have to refresh the page. -->
 
 <!-- blackjack. You choose the number you want to input. Then, you roll a 6 sided dice. If the number you select is zero, then you have to hit 21. If you go under the number, the  -->
 
 <!--  -->
 
-<button id="rollButton">Roll the Dice</button>
-        
-<div id="boardContainer">
-    <div id="board">
-        <div class="board-number" data-number="0">0</div>
-        <div class="board-number" data-number="1">1</div>
-        <div class="board-number" data-number="2">2</div>
-        <div class="board-number" data-number="3">3</div>
-        <div class="board-number" data-number="4">4</div>
-        <div class="board-number" data-number="5">5</div>
-        <div class="board-number" data-number="6">6</div>
-        <div class="board-number" data-number="7">7</div>
-        <div class="board-number" data-number="8">8</div>
-        <div class="board-number" data-number="9">9</div>
-    </div>
-</div>
-
-<input type="text" id="phoneBar" placeholder="Selected number will appear here">
-
-<script src = "jsproject.js"></script>
-</body>
-
-
-
-
-
-</html>
+<!-- <button id="rollButton">Roll the Dice</button>
