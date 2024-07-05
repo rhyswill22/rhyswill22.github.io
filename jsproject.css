@@ -46,10 +46,21 @@ body {
   }
   
   .number:hover {
-    /* background-color: #c40000; */
     border-top-color: aqua;
   }
 
+
+.number::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #fff;
+  content: attr(data-number);
+  position: absolute;
+  bottom: -200px;
+  font-size: 40px;
+  text-align: center;
+}
 
 img{
     margin-left: 10px;
