@@ -18,13 +18,13 @@ body {
   .dartboard {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 5px solid #333;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: rotate 10s infinite linear;
+    /* animation: rotate 14s infinite linear;f */
   }
   
   .number {
@@ -44,16 +44,18 @@ body {
     background-color: #ddd;
   }
   
-  .number:nth-child(1) { top: 10%; left: 45%; }
-  .number:nth-child(2) { top: 20%; left: 75%; }
-  .number:nth-child(3) { top: 50%; left: 90%; }
-  .number:nth-child(4) { top: 80%; left: 75%; }
-  .number:nth-child(5) { top: 90%; left: 45%; }
-  .number:nth-child(6) { top: 80%; left: 15%; }
-  .number:nth-child(7) { top: 50%; left: 5%; }
-  .number:nth-child(8) { top: 20%; left: 15%; }
-  .number:nth-child(9) { top: 10%; left: 45%; }
-  .number:nth-child(10) { top: 20%; left: 75%; }
+  /* .number:nth-child(0) { top: 10%; left: 45%; }  */
+
+  .number:nth-child(1) { top: 0%; left: 45%; } /*0 */
+  .number:nth-child(2) { top: 20%; left: 80%; }
+  .number:nth-child(3) { top: 64%; left: 80%; }
+  .number:nth-child(4) { top: 90%; left: 45%; }
+  .number:nth-child(5) { top: 80%; left: 15%; }
+  .number:nth-child(6) { top: 50%; left: 5%; }
+  .number:nth-child(7) { top: 20%; left: 15%; }
+  .number:nth-child(8) { top: 0%;  left: 45%; }
+  .number:nth-child(9) { top: 20%; left: 75%; }   /*9 */
+  .number:nth-child(10) { top: 20%; left: 75%; }   /*9 */
   
   @keyframes rotate {
     from {
