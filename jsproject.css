@@ -13,10 +13,11 @@ body {
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
+
   }
   
   .dartboard {
-    width: 100%;
+     width: 100%;
     height: 100%;
     border-radius: 100%;
     border: 5px solid #333;
@@ -24,25 +25,29 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* animation: rotate 2s infinite linear;f */
-  }
+    animation: rotate 11s infinite linear;
+  } 
   
   .number {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 250px solid #b10404;
+  border-radius: 24%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #333;
-  border-radius: 50%;
+
   cursor: pointer;
   transform: translate(-50%, -50%);
   }
   
   .number:hover {
-    background-color: #ddd;
+    /* background-color: #c40000; */
+    border-top-color: aqua;
   }
 
 
@@ -56,16 +61,20 @@ img{
 } 
   
 
-.number:nth-child(1) { top: 7%; left: 50%; }
-.number:nth-child(2) { top: 15%; left: 76%; }
-.number:nth-child(3) { top: 37%; left: 92%; }
-.number:nth-child(4) { top: 65%; left: 92%; }
-.number:nth-child(5) { top: 85%; left: 75%; }
-.number:nth-child(6) { top: 93%; left: 50%; }
-.number:nth-child(7) { top: 85%; left: 25%; }
-.number:nth-child(8) { top: 65%; left: 8%;}
-.number:nth-child(9) { top: 37%; left: 8%;}
-.number:nth-child(10) { top: 15%; left: 24%;}
+
+.number:nth-child(1) { top: 7%; left: 50%; transform: translate(-50%, -50%) rotate(0deg); }
+.number:nth-child(2) { top: 15%; left: 76%; transform: translate(-50%, -50%) rotate(36deg); }
+.number:nth-child(3) { top: 37%; left: 92%; transform: translate(-50%, -50%) rotate(72deg); }
+.number:nth-child(4) { top: 65%; left: 92%; transform: translate(-50%, -50%) rotate(108deg); }
+.number:nth-child(5) { top: 85%; left: 75%; transform: translate(-50%, -50%) rotate(144deg); }
+.number:nth-child(6) { top: 93%; left: 50%; transform: translate(-50%, -50%) rotate(180deg); }
+.number:nth-child(7) { top: 85%; left: 25%; transform: translate(-50%, -50%) rotate(216deg); }
+.number:nth-child(8) { top: 65%; left: 8%; transform: translate(-50%, -50%) rotate(252deg); }
+.number:nth-child(9) { top: 37%; left: 8%; transform: translate(-50%, -50%) rotate(288deg); }
+.number:nth-child(10) { top: 15%; left: 24%; transform: translate(-50%, -50%) rotate(324deg); }
+
+
+
 
   @keyframes rotate {
     from {
@@ -77,6 +86,8 @@ img{
   }
   
   input {
+    position: fixed;
+    margin-top: 75%;
     font-size: 20px;
     padding: 10px;
     width: 300px;
