@@ -32,7 +32,7 @@
         phoneNumberInput.value = phoneNumberFormat(currentPN);
         }
 
-        if(phoneNumberInput.value.length === 10)
+        if(currentPN.length === 10)
         {
         const submitPhoneNumber = confirm(`Is this your phone number: ${phoneNumberInput.value}?`);
         
