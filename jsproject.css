@@ -24,8 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-    animation: rotate 11s infinite linear;
+    animation: rotate 4s infinite linear;
   } 
   
   .number {
@@ -43,13 +42,17 @@ body {
 
   cursor: pointer;
   transform: translate(-50%, -50%);
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+
   }
   
   .number:hover {
     border-top-color: aqua;
   }
 
-
+.number::nthchild(even){
+    border-color:white; 
+}
 .number::after {
   top: 50%;
   left: 50%;
@@ -62,6 +65,13 @@ body {
   text-align: center;
 }
 
+#circle
+{
+  
+  width: 100px;
+  height: 100px;
+  positon: 10px;
+}
 img{
     margin-left: 10px;
     margin-bottom: 100px;

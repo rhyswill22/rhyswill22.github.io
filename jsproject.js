@@ -15,11 +15,12 @@
 
         if(phoneNumberInput.value.length === 10)
         {
-        const submitPhoneNumber = confirm(`Is this your phone number: ${phoneNumberInput.value}`);
+        const submitPhoneNumber = confirm(`Is this your phone number: ${phoneNumberInput.value}?`);
 
         if(submitPhoneNumber)
         {
             alert(`Submitted phone number: ${phoneNumberInput.value}`);
+            phoneNumberInput.value = '';
         }
         else{
             phoneNumberInput.value = '';
