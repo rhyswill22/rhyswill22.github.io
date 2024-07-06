@@ -9,6 +9,10 @@ body {
   
   }
 
+header{
+    font-family: Arial, sans-serif;
+}
+
 .bullseye {
     margin-bottom: 30px;
     height:30px;
