@@ -60,9 +60,9 @@
 
 // functions after the content is loaded
 
-//   document.addEventListener('DOMContentLoaded', () => {
-//     const numbers = document.querySelectorAll('.number');
-//     const phoneNumberInput = document.getElementById('phoneNumber');
+  document.addEventListener('DOMContentLoaded', () => {
+    const numbers = document.querySelectorAll('.number');
+    const phoneNumberInput = document.getElementById('phoneNumber');
   
     // add each number to the phone number input bar
     numbers.forEach(number => {
@@ -71,5 +71,5 @@
         phoneNumberInput.value += selectedNumber;
       });
     });
-//   });
+  });
   
