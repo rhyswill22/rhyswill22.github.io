@@ -14,7 +14,7 @@
             formattedValue = `(${formattedValue.slice(0, 3)}) ${formattedValue.slice(3)}`;
           }
 
-          if (formattedValue.length > 6) 
+          if (formattedValue.length == 10) 
           {
             formattedValue = `${formattedValue.slice(0, 9)}-${formattedValue.slice(9)}`;
           }
