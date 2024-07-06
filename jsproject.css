@@ -72,7 +72,6 @@ img{
 } 
   
 
-
 .number:nth-child(1) { top: 7%; left: 50%; transform: translate(-50%, -50%) rotate(0deg); }
 .number:nth-child(2) { top: 15%; left: 76%; transform: translate(-50%, -50%) rotate(36deg); }
 .number:nth-child(3) { top: 37%; left: 92%; transform: translate(-50%, -50%) rotate(72deg); }
