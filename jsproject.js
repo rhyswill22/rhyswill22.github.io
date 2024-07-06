@@ -1,24 +1,4 @@
-// document.getElementById('rollButton').addEventListener('click', function() {
-//     const adsContainer = document.getElementById('adsContainer');
-//     const triviaQuestion = document.getElementById('triviaQuestion');
-    
-    // clear containers
-    // adsContainer.innerHTML = '';
-    // triviaQuestion.innerHTML = '';
-    
-    // Roll a dice between 0 and 9
-    // const roll = Math.floor(Math.random() * 10) + 1;
-    
-    // Ad boxes
-    // for (let i = 0; i < roll; i++) {
-    //     const adBox = document.createElement('div');
-    //     adBox.className = 'ad-box';
 
-    //     adBox.textContent = `Ad ${i + 1}`;
-
-    //     adsContainer.appendChild(adBox);
-
-    // }};
 
     // document.getElementById('rotateButton').addEventListener('click', function() {
     //     const board = document.getElementById('board');
@@ -78,16 +58,18 @@
 
   // end of document
 
+// functions after the content is loaded
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const numbers = document.querySelectorAll('.number');
-    const phoneNumberInput = document.getElementById('phoneNumber');
+//   document.addEventListener('DOMContentLoaded', () => {
+//     const numbers = document.querySelectorAll('.number');
+//     const phoneNumberInput = document.getElementById('phoneNumber');
   
-    numbers.forEach(number => {
-      number.addEventListener('click', () => {
-        const selectedNumber = number.getAttribute('data-number');
-        phoneNumberInput.value += selectedNumber;
-      });
-    });
-  });
+//     // add each number to the phone number input bar
+//     numbers.forEach(number => {
+//       number.addEventListener('click', () => {
+//         const selectedNumber = number.getAttribute('data-number');
+//         phoneNumberInput.value += selectedNumber;
+//       });
+//     });
+//   });
   
