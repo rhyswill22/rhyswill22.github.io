@@ -5,7 +5,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const numbers = document.querySelectorAll('.number');
     const phoneNumberInput = document.getElementById('phoneNumber');
-  
+    let currentPN = '';
 
     const phoneNumberFormat = (value) => {
 
@@ -28,7 +28,6 @@
     numbers.forEach(number => {
       number.addEventListener('click', () => {
         const selectedNumber = number.getAttribute('data-number');
-        let currentPN = '';
         if (currentPN.length < 10)
         {
         currentPN += selectedNumber;
@@ -37,16 +36,18 @@
 
         if(phoneNumberInput.value.length === 10)
         {
-
         const submitPhoneNumber = confirm(`Is this your phone number: ${phoneNumberInput.value}?`);
         
         if(submitPhoneNumber)
-        {
+            {
             alert(`Submitted phone number: ${phoneNumberInput.value}`);
             phoneNumberInput.value = '';
-        }
-        else{
+            currentPN = ''
+            }
+        else
+            {
             phoneNumberInput.value = '';
+            currentPN = '';
             }
         }
       });
