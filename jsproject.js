@@ -29,7 +29,7 @@
         if (currentPN.length < 10)
         {
         currentPN += selectedNumber;
-        phoneNumberInput.value += phoneNumberFormat(currentPN);
+        phoneNumberInput.value = phoneNumberFormat(currentPN);
         }
 
         if(phoneNumberInput.value.length === 10)
