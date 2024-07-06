@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: rotate 4s infinite linear;
+    /* animation: rotate 4s infinite linear; */
   } 
   
   .number {
@@ -45,14 +45,15 @@ body {
   clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
 
   }
-  
+
+.number:nth-child(even){border-top-color: white;}
+
+.number:nth-child(even)::after{color:black;}
+
   .number:hover {
-    border-top-color: aqua;
+    border-top-color: #c2c005;
   }
 
-.number::nthchild(even){
-    border-color:white; 
-}
 .number::after {
   top: 50%;
   left: 50%;
@@ -92,6 +93,7 @@ img{
 .number:nth-child(8) { top: 64%; left: 8%; transform: translate(-50%, -50%) rotate(252deg); }
 .number:nth-child(9) { top: 37%; left: 8%; transform: translate(-50%, -50%) rotate(288deg); }
 .number:nth-child(10) { top: 15%; left: 24%; transform: translate(-50%, -50%) rotate(324deg); }
+
 
 
 
