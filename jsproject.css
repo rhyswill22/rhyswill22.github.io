@@ -9,7 +9,7 @@ body {
   }
   
   .dartboard-container {
-    position: relative;
+    position: fixed;
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
@@ -98,7 +98,7 @@ img{
   
   input {
     position: fixed;
-    margin-top: 75%;
+    margin-top: 570px;
     font-size: 20px;
     padding: 10px;
     width: 300px;

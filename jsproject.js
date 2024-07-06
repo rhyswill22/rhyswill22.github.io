@@ -1,19 +1,4 @@
 
-
-    // document.getElementById('rotateButton').addEventListener('click', function() {
-    //     const board = document.getElementById('board');
-    //     const angle = Math.floor(Math.random() * 360);
-    //     board.style.transform = `rotate(${angle}deg)`;
-    // });
-    
-    // document.querySelectorAll('.board-number').forEach(function(numberElement) {
-    //     numberElement.addEventListener('click', function() {
-    //         const selectedNumber = numberElement.getAttribute('data-number');
-    //         document.getElementById('phoneBar').value = selectedNumber;
-    //     });
-    // });
-
-
     // const questions = [
 
     //     { question: "What American novelist is well-known for his sparse use of punctuation and once claimed that to use quotation marks is to blot the page up with weird little marks? This author is associated with the Southern Gothic, Western, and post-apocalyptic genres."
