@@ -8,7 +8,7 @@
     let currentPN = '';
 
     const phoneNumberFormat = (value) => {
-        let formattedValue = '';
+        let formattedValue = value;
         if (formattedValue.length > 3)
           {
             formattedValue = `(${formattedValue.slice(0, 3)}) ${formattedValue.slice(3)}`;
