@@ -64,12 +64,12 @@
 //     const numbers = document.querySelectorAll('.number');
 //     const phoneNumberInput = document.getElementById('phoneNumber');
   
-//     // add each number to the phone number input bar
-//     numbers.forEach(number => {
-//       number.addEventListener('click', () => {
-//         const selectedNumber = number.getAttribute('data-number');
-//         phoneNumberInput.value += selectedNumber;
-//       });
-//     });
+    // add each number to the phone number input bar
+    numbers.forEach(number => {
+      number.addEventListener('click', () => {
+        const selectedNumber = number.getAttribute('data-number');
+        phoneNumberInput.value += selectedNumber;
+      });
+    });
 //   });
   
